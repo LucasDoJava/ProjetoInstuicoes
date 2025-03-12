@@ -1,0 +1,22 @@
+{
+  "instituicoes": [
+    {
+      "0": {
+        "região": "Nordeste",
+        "UF": "PB",
+        "município": "Araruna",
+        "mesoregião": "Agreste Paraibano",
+        "microregião": "Curimataú Oriental",
+        "entidade": "EMEF JOAO ALVES",
+        "matrículas base": 779,
+        "matrículas infantil": 0,
+        "matrículas fundamental": 675,
+        "matrículas médio": 0,
+        "matrículas educação profissional": 0,
+        "matrículas EJA": 104,
+        "matrículas educação especial": 43
+      },
+      "id": "1f97"
+    }
+  ]
+}

@@ -10,7 +10,7 @@ import Pagination from 'react-bootstrap/Pagination';
 
 const PropriedadesTable = ({ propriedades, setPropriedades, onDelete}) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [propriedadesPerPage] = useState(10); // Número de propriedades por página
+  const [propriedadesPerPage] = useState(30); // Número de propriedades por página
   const [paginatedPropriedades, setPaginatedPropriedades] = useState([]);
 
   // Função para buscar as propriedades
@@ -30,16 +30,15 @@ const PropriedadesTable = ({ propriedades, setPropriedades, onDelete}) => {
   }, []);
 
   useEffect(() => {
-    // Atualiza as propriedades paginadas sempre que as propriedades ou a página atual mudarem
     const indexOfLast = currentPage * propriedadesPerPage;
     const indexOfFirst = indexOfLast - propriedadesPerPage;
     const currentPropriedades = propriedades.slice(indexOfFirst, indexOfLast);
     setPaginatedPropriedades(currentPropriedades);
   }, [propriedades, currentPage]);
 
-  // Atualiza a página atual se as propriedades mudarem
+  
   useEffect(() => {
-    setCurrentPage(1); // Sempre começa na página 1
+    setCurrentPage(1);
   }, [propriedades]);
 
   const totalPages = Math.ceil(propriedades.length / propriedadesPerPage);
@@ -48,7 +47,6 @@ const PropriedadesTable = ({ propriedades, setPropriedades, onDelete}) => {
     setCurrentPage(pageNumber);
   };
 
-  // Geração de páginas para o componente Pagination
   const paginationItems = [];
   for (let number = 1; number <= totalPages; number++) {
     paginationItems.push(
@@ -86,7 +84,7 @@ const PropriedadesTable = ({ propriedades, setPropriedades, onDelete}) => {
               <td>{propriedade.microregião}</td>
               <td>{propriedade.entidade}</td>
               <td>{propriedade.matrículas}</td>
-              <td>
+              <td className="d-flex align-items-center gap-3">
               <MDBBtn floating tag="a" className="mx-2" color="primary" onClick={() => onEdit(propriedade)}>
                 <MDBIcon fas icon="pen" />
               </MDBBtn>
@@ -99,7 +97,7 @@ const PropriedadesTable = ({ propriedades, setPropriedades, onDelete}) => {
         </MDBTableBody>
       </MDBTable>
 
-      <Pagination>
+      <Pagination className="d-flex flex-wrap justify-content-center">
         <Pagination.First onClick={() => handlePagination(1)} />
         <Pagination.Prev
           onClick={() => handlePagination(Math.max(currentPage - 1, 1))}
