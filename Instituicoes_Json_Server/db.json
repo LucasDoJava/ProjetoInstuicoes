@@ -4226,16 +4226,6 @@
       "município": "Pombal",
       "mesoregião": "Sertão Paraibano",
       "microregião": "Sousa",
-      "entidade": "EEEF DE ESTRELO",
-      "matrículas": 8,
-      "id": "71c4"
-    },
-    {
-      "região": "Nordeste",
-      "UF": "PB",
-      "município": "Pombal",
-      "mesoregião": "Sertão Paraibano",
-      "microregião": "Sousa",
       "entidade": "EEEF DE MUNDO NOVO",
       "matrículas": null,
       "id": "8408"
@@ -20199,16 +20189,6 @@
       "entidade": "EDUCANDARIO ROSALINDA MONDINI",
       "matrículas": 339,
       "id": "c054"
-    },
-    {
-      "região": "Nordeste",
-      "UF": "PB",
-      "município": "Alagoinha",
-      "mesoregião": "Agreste Paraibano",
-      "microregião": "Guarabira",
-      "entidade": "ECIT AGENOR CLEMENTE DOS SANTOS",
-      "matrículas": 600,
-      "id": "1bb5"
     },
     {
       "região": "Nordeste",
@@ -54483,16 +54463,6 @@
     {
       "região": "Nordeste",
       "UF": "PB",
-      "município": "Princesa Isabel",
-      "mesoregião": "Sertão Paraibano",
-      "microregião": "Serra do Teixeira",
-      "entidade": "IFPB - CAMPUS PRINCESA ISABEL",
-      "matrículas": 313,
-      "id": "be08"
-    },
-    {
-      "região": "Nordeste",
-      "UF": "PB",
       "município": "Picuí",
       "mesoregião": "Borborema",
       "microregião": "Seridó Oriental Paraibano",
@@ -54751,14 +54721,14 @@
       "id": "bd6f"
     },
     {
-      "região": "Nordeste",
-      "UF": "PB",
-      "município": "Gurinhém",
-      "mesoregião": "Agreste Paraibano",
-      "microregião": "Itabaiana",
-      "entidade": "EDUCANDARIO REINO ENCANTADO",
-      "matrículas": null,
-      "id": "954e"
+      "id": "1bb5",
+      "região": "dafaf",
+      "UF": "dafaf",
+      "município": "fafafa",
+      "mesoregião": "afafaf",
+      "microregião": "fafaf",
+      "entidade": "gsg",
+      "matrículas": "1"
     }
   ]
 }

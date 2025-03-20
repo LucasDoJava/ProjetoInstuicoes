@@ -1,5 +1,5 @@
 import { Container} from 'react-bootstrap';
-import PropriedadesCard from './PropriedadesCard';
+import InstituicaoCard from './InstituicaoCard';
 import Carrossel from './Carrossel';
 
 
@@ -10,7 +10,7 @@ const Main = () => {
       <div className="mb-4">
       <Carrossel />
       </div>
-        <PropriedadesCard />
+        <InstituicaoCard />
       </Container>
     </main>
   );
